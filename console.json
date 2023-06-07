@@ -6,12 +6,51 @@
         "script": "console.ps1",
         "main" : "Main.PowerShell_Console.ps1"
     },
+    "data":
+    {
+        "path" :"store",
+        "json":
+        {
+            "author"  : "author.json" ,
+            "menu"    : "menu.json"    
+        },
+        "desc" : "This Directory contains only JSON for Storing and Managing Data related to the console"
+    },
+    "directory":
+    [
+        {
+            "index" : 0,
+            "title": "Menu",
+            "path":"display\\menu",
+            "desc": "Script Files in this directory are for display menu only"
+        },
+        {
+            "index" : 1,
+            "title": "Dependency",
+            "path":"execute\\dependency",
+            "desc" : "Scripts Files in this directory will be loaded from console.ps1 <- console.json"
+        },
+        {
+            "index" : 2,
+            "title": "Functions",
+            "path":"execute\\functions",
+            "desc":"Scripts contains functions which can be called if and when needed. does not automatically getexecuted"
+        },
+        {
+            "index" : 3,
+            "title": "Run",
+            "path":"execute\\run",
+            "desc":"Script in this directory will be automatically gets executed. code should not be put within functions {} blocks"
+        }
+
+    ],
     "dependency":
     {
         "path" : "execute\\dependency",
         "script": 
         [
-           {     "file" : "Show-Figlet.ps1"      }
+            {     "file" : "Autodiscover-Menu.ps1"           },
+            {     "file" : "Autodiscover-Functions.ps1"      }
         ]
     }
 }

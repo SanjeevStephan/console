@@ -1,0 +1,53 @@
+{
+    "info":
+    {
+        "json" : "menu.json",
+        "script": "execute\\dependency\\Display-Menu-Template.ps1"
+    },
+    "menu" :
+    [
+        [ 
+            {
+                "index" : 0,
+                "code": "",
+                "title" :"Help",
+                "desc" : "Show the Help Guide"
+            },
+            {
+                "index" : 1,
+                "code": "",
+                "title" :"Create New Menu",
+                "desc" : "Select to Create New Menu"
+            }
+        ],
+        [
+            {
+                "index" : 0,
+                "code": "A",
+                "title" :"Sample Menu",
+                "desc" : "Sample Description"
+            },
+            {
+                "index" : 1,
+                "code": "A",
+                "title" :"Sample Menu 2 ",
+                "desc" : "Sample Description 2 "
+            }
+        ],
+        [
+            {
+                "index" : 0,
+                "code": "T",
+                "title" :"Test Menu",
+                "desc" : "Test Description"
+            },
+            {
+                "index" : 0,
+                "code": "T",
+                "title" :"Test Menu",
+                "desc" : "Test Description"
+            }
+        ]
+    ]
+    
+}
