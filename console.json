@@ -1,0 +1,17 @@
+{
+    "info":
+    {
+        "ascii" : "display\\ascii\\console.ascii",
+        "json" : "console.json",
+        "script": "console.ps1",
+        "main" : "Main.PowerShell_Console.ps1"
+    },
+    "dependency":
+    {
+        "path" : "execute\\dependency",
+        "script": 
+        [
+           {     "file" : "Show-Figlet.ps1"      }
+        ]
+    }
+}
